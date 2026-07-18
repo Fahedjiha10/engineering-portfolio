@@ -3,6 +3,7 @@
 [![Live site](https://img.shields.io/badge/Live_Portfolio-View-00a6a6?style=for-the-badge)](https://fahedjiha10.github.io/engineering-portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Fahed_Jiha-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fahed-j-37849b253/)
 [![Complete archive](https://img.shields.io/badge/Complete_Archive-v1.0-7c3aed?style=for-the-badge&logo=github)](https://github.com/Fahedjiha10/engineering-portfolio/releases/tag/v1.0-complete-archive)
+[![Resume](https://img.shields.io/badge/Resume-PDF-16324F?style=for-the-badge&logo=adobeacrobatreader)](resume/Fahed_Jiha_Computer_Engineering_Resume.pdf)
 
 Computer Engineering student at Florida International University (**B.S. expected Spring 2027**, Mathematics minor, **3.7 GPA**) and IT / Systems Engineer in Miami. I build practical systems across Python automation, embedded systems, IoT, FPGA/SoC coursework, C/C++, hardware troubleshooting, and technical operations.
 
@@ -31,6 +32,12 @@ The recruiter-facing projects above are intentionally curated. The downloadable 
 - [Security, privacy, and exclusions](docs/archive-security-and-exclusions.md)
 - [Archive verification report](docs/archive-verification-report.md)
 - [Original source locations](docs/archive-source-locations.md)
+- [Desktop Portfolio verification](docs/desktop-portfolio-verification.md)
+
+## Resume
+
+- [View or download the current PDF resume](resume/Fahed_Jiha_Computer_Engineering_Resume.pdf)
+- [Download the editable DOCX resume](resume/Fahed_Jiha_Computer_Engineering_Resume.docx)
 
 The release contains **422 files** totaling **168,712,192 uncompressed bytes**. The ZIP is **157,993,017 bytes (150.67 MiB)**. Credentials are redacted; private, unrelated, generated-cache, and PID-bearing duplicate material is documented and excluded.
 
