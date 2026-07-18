@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop — AL TALLOW</title>
+  <meta name="description" content="AL TALLOW Nourishing Balm — grass-fed beef tallow balm with simple ingredients." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="inner">
+        <a class="brand" href="index.html" aria-label="AL TALLOW home">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">AL TALLOW</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a class="active" href="product.html">Shop</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="actions">
+          <a class="btn mobile-only" href="index.html">Home</a>
+          <button class="icon-btn" type="button" data-open-cart aria-label="Open cart" style="position:relative">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 7h15l-1.5 9h-12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M6 7 5 3H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="9" cy="20" r="1.5" fill="currentColor"/>
+              <circle cx="18" cy="20" r="1.5" fill="currentColor"/>
+            </svg>
+            <span class="badge" data-cart-count style="display:none">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="panel">
+        <div class="product-grid">
+          <div class="product-shot">
+            <img src="assets/mockup.jpeg" alt="AL TALLOW product jar" />
+          </div>
+
+          <div>
+            <div class="kicker">Nourishing Balm</div>
+            <h1 style="font-size:44px; margin-top:10px">Grass-fed Beef Tallow Balm</h1>
+            <p class="muted">A rich, simple balm designed to soften dry skin and support a healthy barrier.</p>
+
+            <div class="row" style="justify-content:space-between; margin-top:10px">
+              <div class="price">$24.00</div>
+              <div class="pill">2 oz (57g)</div>
+            </div>
+
+            <div class="field">
+              <label for="variant">Variant</label>
+              <select id="variant">
+                <option value="Original (Unscented)">Original (Unscented)</option>
+                <option value="Honey + Olive">Honey + Olive</option>
+              </select>
+            </div>
+
+            <div class="row">
+              <div class="field" style="width:120px">
+                <label for="qty">Quantity</label>
+                <input id="qty" type="number" min="1" value="1" />
+              </div>
+
+              <div class="field" style="flex:1">
+                <label>&nbsp;</label>
+                <button class="btn primary" type="button"
+                  data-add-to-cart
+                  data-sku="ALTB-2OZ-ORIGINAL"
+                  data-name="AL TALLOW Nourishing Balm"
+                  data-variant="2 oz (57g)"
+                  data-price="24"
+                  data-qty-input="qty"
+                  id="addBtn"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <div class="small muted" style="margin-top:10px">
+              Note: swap the price, variants, and SKU values in <span style="font-family:ui-monospace, SFMono-Regular, Menlo, monospace">product.html</span>.
+            </div>
+
+            <hr class="sep" />
+
+            <h3 style="margin-top:0">Ingredients</h3>
+            <p class="muted">Grass-fed beef tallow, olive oil, honey, beeswax.</p>
+
+            <h3>How to use</h3>
+            <ul class="clean">
+              <li>Warm a small amount between fingers.</li>
+              <li>Press into dry areas (face, hands, elbows) as needed.</li>
+              <li>Start small — it’s concentrated.</li>
+            </ul>
+
+            <h3>Shipping & returns</h3>
+            <p class="muted">Add your real policy here. If you’re using Shopify, put the policy pages in Shopify and link them.</p>
+
+            <div class="row" style="margin-top:14px">
+              <a class="btn" href="index.html">Back to home</a>
+              <button class="btn" type="button" data-open-cart>View cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer" style="padding-top:22px">
+        <div class="small">© <span id="year"></span> AL TALLOW.</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Cart Drawer -->
+  <div class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="backdrop" data-close-cart></div>
+    <div class="panel">
+      <div class="row" style="justify-content:space-between">
+        <h3 style="margin:0">Cart</h3>
+        <button class="btn" type="button" data-close-cart>Close</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="total">
+        <div>Subtotal</div>
+        <div id="cartTotal">$0.00</div>
+      </div>
+      <div class="row" style="margin-top:14px">
+        <button class="btn primary" id="checkoutBtn" type="button">Checkout</button>
+        <a class="btn" href="product.html">Continue shopping</a>
+      </div>
+      <div class="small muted" style="margin-top:12px">
+        Replace the checkout link inside <span style="font-family:ui-monospace, SFMono-Regular, Menlo, monospace">js/app.js</span>.
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Keep SKU aligned with variant selector (simple example)
+    const variantSel = document.getElementById("variant");
+    const addBtn = document.getElementById("addBtn");
+    function syncSku(){
+      const v = variantSel.value;
+      if(v.includes("Honey")){
+        addBtn.setAttribute("data-sku","ALTB-2OZ-HONEY");
+        addBtn.setAttribute("data-variant","Honey + Olive · 2 oz (57g)");
+      }else{
+        addBtn.setAttribute("data-sku","ALTB-2OZ-ORIGINAL");
+        addBtn.setAttribute("data-variant","Original · 2 oz (57g)");
+      }
+    }
+    variantSel.addEventListener("change", syncSku);
+    syncSku();
+  </script>
+</body>
+</html>
