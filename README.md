@@ -5,7 +5,7 @@
 [![Complete archive](https://img.shields.io/badge/Complete_Archive-v1.0-7c3aed?style=for-the-badge&logo=github)](https://github.com/Fahedjiha10/engineering-portfolio/releases/tag/v1.0-complete-archive)
 [![Resume](https://img.shields.io/badge/Resume-PDF-16324F?style=for-the-badge&logo=adobeacrobatreader)](resume/Fahed_Jiha_Computer_Engineering_Resume.pdf)
 
-Computer Engineering student at Florida International University (**B.S. expected Spring 2027**, Mathematics minor, **3.7 GPA**) and IT / Systems Engineer in Miami. I build practical systems across Python automation, embedded systems, IoT, FPGA/SoC coursework, C/C++, hardware troubleshooting, and technical operations.
+I'm a Computer Engineering student at Florida International University, graduating in **Spring 2027** with a Mathematics minor and a **3.7 GPA**. I also work as an IT / Systems Engineer in Miami. My projects range from Python tools and embedded systems to FPGA coursework, C/C++, hardware troubleshooting, and day-to-day technical operations.
 
 ## Featured work
 
@@ -22,7 +22,7 @@ Computer Engineering student at Florida International University (**B.S. expecte
 
 ## Complete engineering archive
 
-The recruiter-facing projects above are intentionally curated. The downloadable **complete evidence archive** preserves the wider body of work: all 27 Visual Studio project folders, every Arduino/MQTT stage, individual RIMS assignments, FPGA and Zybo coursework, featured software, circuit and computer-engineering reports, standalone source-code copies, and Unreal/experimental prototypes.
+The projects above are the best place to start. I also kept a **complete project archive** for anyone who wants to see more of my work and how my skills developed over time. It includes all 27 Visual Studio project folders, every Arduino/MQTT stage, individual RIMS assignments, FPGA and Zybo coursework, software projects, circuit and computer-engineering reports, standalone source-code copies, and Unreal prototypes.
 
 - [Download the complete archive (GitHub Release)](https://github.com/Fahedjiha10/engineering-portfolio/releases/tag/v1.0-complete-archive)
 - [Master project catalog — purpose, inputs, processing, outputs, technologies, status, duplicates, and known problems](docs/complete-project-catalog.md)
@@ -49,4 +49,4 @@ The release contains **422 files** totaling **168,712,192 uncompressed bytes**. 
 
 ## Curation standard
 
-The main repository is curated for quick review; the release archive retains additional binaries, reference material, duplicates, reports, and prototypes needed for complete evidence. Generated caches, private credentials, unrelated material, and a PID-bearing duplicate are excluded and documented. IoT credentials are redacted. Collaborative work is labeled, and proposal-only work is not presented as completed hardware. See [verification notes](docs/project-status.md) and [archive exclusions](docs/archive-security-and-exclusions.md).
+I organized the main repository so the projects are easy to browse. The release archive contains the rest of the work, including reports, alternate versions, reference files, and prototypes. I removed build caches, private credentials, unrelated files, and one duplicate containing a student PID. Group work is labeled, and design proposals are kept separate from completed projects. See [verification notes](docs/project-status.md) and [archive exclusions](docs/archive-security-and-exclusions.md).
