@@ -1,0 +1,1 @@
+const buttons=document.querySelectorAll("[data-filter]"),cards=document.querySelectorAll("[data-kind]");buttons.forEach(button=>button.addEventListener("click",()=>{buttons.forEach(x=>x.classList.remove("active"));button.classList.add("active");cards.forEach(card=>card.hidden=button.dataset.filter!=="all"&&card.dataset.kind!==button.dataset.filter)}));
