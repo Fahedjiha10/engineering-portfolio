@@ -1,0 +1,17 @@
+{
+  "expected_categories_by_page": {
+    "1": "cover_index",
+    "2": "floor_plans",
+    "3": "window_storefront_schedules",
+    "4": "window_storefront_schedules",
+    "5": "door_schedules",
+    "6": "exterior_elevations",
+    "7": "exterior_elevations",
+    "8": "structural_wind_pressures",
+    "9": "structural_wind_pressures",
+    "10": "structural_general",
+    "11": "mechanical",
+    "12": "vendor_detail_sheets",
+    "13": "unknown_needs_manual_review"
+  }
+}
