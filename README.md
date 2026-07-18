@@ -25,6 +25,7 @@ The recruiter-facing projects above are intentionally curated. The downloadable 
 
 - [Download the complete archive (GitHub Release)](https://github.com/Fahedjiha10/engineering-portfolio/releases/tag/v1.0-complete-archive)
 - [Master project catalog — purpose, inputs, processing, outputs, technologies, status, duplicates, and known problems](docs/complete-project-catalog.md)
+- [Descriptive title crosswalk — real project names mapped to every generic assignment/folder](docs/descriptive-project-title-crosswalk.md)
 - [Detailed project catalog](docs/detailed-project-catalog.md)
 - [SHA-256 file inventory](docs/FILE_INVENTORY.csv)
 - [Security, privacy, and exclusions](docs/archive-security-and-exclusions.md)
