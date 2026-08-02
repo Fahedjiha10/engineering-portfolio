@@ -178,6 +178,17 @@ This crosswalk replaces generic course and Visual Studio labels with titles deri
 
 ## FPGA, Zybo Z7, and computer-design assignments
 
+### FPGA Smart Parking Garage Controller (original: `EEL4740 Smart Parking`)
+
+- **Purpose:** Track the number of available spaces in a small parking garage on a Zybo Z7-20 FPGA.
+- **Inputs:** 125 MHz clock, four capacity switches, reset/load button, entry button, and exit button.
+- **Processing:** Synchronizes and debounces mechanical inputs, converts presses into one-clock pulses, and uses a three-state VHDL finite-state machine to update a four-bit count within zero and the loaded capacity. Simultaneous entry and exit events are ignored.
+- **Outputs:** LD0-LD3 show available spaces in binary; RGB LD5 is green when spaces remain and red when the garage is full.
+- **Technologies:** VHDL-2008, Xilinx Vivado, Zybo Z7-20, FSM design, debouncing, PWM, XDC constraints, Tcl automation, self-checking simulation.
+- **Status:** Completed Summer 2026. Simulation passed, synthesis and implementation completed, timing constraints were met, a bitstream was generated, and Hardware Manager recorded successful programming of the `xc7z020` device.
+- **Known problems:** Vivado reports one expected `ZPS7-1` warning because this project uses programmable logic only and does not instantiate the Zynq processing system. A public physical-operation video is not included.
+- **Title confidence:** Verified from the completed source, final report, testbench, and Vivado evidence.
+
 ### Digital Safe and Coin-Operated Vending Machine Processors (original: `Assignment 5 - Custom Single Purpose Processor`)
 
 - **Purpose:** Design two custom single-purpose processors in VHDL: a programmable-passcode digital safe and a coin-summing soda dispenser.

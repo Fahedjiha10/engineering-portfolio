@@ -2,6 +2,8 @@
 
 Verification was performed on the curated copies on July 16, 2026.
 
+The FPGA Smart Parking project was added and independently rechecked on August 2, 2026. Its VHDL-2008 source compiled and the full self-checking behavioral testbench passed in Vivado 2019.2. Previously generated implementation evidence also records successful synthesis, routing, timing closure, bitstream generation, and Zybo Z7-20 programming.
+
 ## Passed checks
 
 - Portfolio inventory after curation: 410 project files, approximately 160.48 MB, before adding audit documents.
@@ -16,7 +18,7 @@ Verification was performed on the curated copies on July 16, 2026.
 - The developed loan-calculator source failed `g++ -std=c++17 -fsyntax-only` because `pow` is used without including `<cmath>`.
 - The Word COM automation prototype was not compiled and contains visible portability/correctness concerns.
 - Arduino firmware was not compiled because board cores and project-specific library versions were not validated in this task.
-- FPGA assignments were not synthesized or implemented because project-specific HDL/Vivado projects were not found.
+- The older FPGA coursework remains document-based unless noted separately. The completed Smart Parking project is the exception and now includes project-specific HDL, testbench, constraints, a bitstream, and Vivado verification evidence.
 - Unreal assets were not opened in Unreal Editor; authorship and runtime behavior remain unverified.
 - Hangman expects a `words.txt` file that was not located with the project.
 - The Al Tallow and Deal Scout interfaces were retained as source but were not browser-tested during this filesystem curation pass.

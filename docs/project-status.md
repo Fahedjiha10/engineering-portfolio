@@ -1,6 +1,6 @@
 # Project status and verification
 
-Updated July 18, 2026.
+Updated August 2, 2026.
 
 | Project | Evidence | Status | Limitation |
 |---|---|---|---|
@@ -11,6 +11,6 @@ Updated July 18, 2026.
 | Embedded State Machines | RIMS C and machine files | Coursework evidence | Requires RIMS |
 | Python Hangman | Python source and sample list | Runnable | Console-only |
 | Al Tallow Website | HTML/CSS/JS | Prototype | No production deployment |
-| FPGA Smart Parking | Design specification | Design-stage | No HDL, testbench, bitstream, or demo found |
+| FPGA Smart Parking | VHDL source, self-checking testbench, XDC, build scripts, reports, bitstream, programming log | Verified | No public board-operation video included |
 
 Excluded: binaries, caches, duplicates, reference samples, private URLs, and credential-bearing originals. Claims are limited to retained evidence.

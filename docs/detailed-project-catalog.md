@@ -40,15 +40,15 @@
 
 ## 4. FPGA Smart Parking Garage Counter
 
-**Location:** `02_Hardware_Embedded_and_Electrical/FPGA_Smart_Parking_Garage`
+**Location:** `projects/fpga-smart-parking` and `02_Hardware_Embedded_and_Electrical/FPGA_Smart_Parking_Garage`
 
-**What it is:** An individual EEL4740 proposal for a parking-capacity counter on an FPGA board. Push buttons simulate vehicle entry/exit; the design calls for bounds checking, LEDs for full/available status, and LED or seven-segment count output.
+**What it is:** An individual EEL4740 VHDL-2008 parking-capacity controller implemented for the Zybo Z7-20. Switches set capacity, reset loads it, debounced buttons simulate entry and exit events, LD0-LD3 show remaining spaces, and RGB LD5 indicates available or full status.
 
-**Technologies proposed:** FPGA, Zybo Z7, Vivado, Verilog/VHDL, finite-state machines, counters, input debouncing, conditional control, and real-time display.
+**Technologies evidenced:** VHDL-2008, FPGA, Zybo Z7-20, Vivado, finite-state machines, input synchronization, debouncing, edge-to-pulse conversion, bounded counters, PWM, XDC constraints, Tcl automation, and self-checking simulation.
 
-**Completion status:** Proposal only. No project-specific VHDL, Verilog, Vivado `.xpr`, synthesized bitstream, simulation waveform, or implementation report was found. The generic Zybo master constraints file is stored separately under the FPGA/Zybo coursework folder.
+**Completion status:** Completed Summer 2026. The retained evidence includes synthesizable VHDL, a self-checking testbench, project-specific constraints, simulation and build scripts, a generated bitstream, timing/utilization/DRC reports, and successful hardware-programming evidence. The testbench passed its functional and boundary cases; implementation met timing at +3.967 ns WNS and 0.000 ns TNS.
 
-**Assessment:** Promising active project, but not ready to present as completed. Highest-value next step is to add HDL, a testbench, simulation screenshots, synthesis/utilization results, and a short board demonstration.
+**Assessment:** One of the strongest hardware portfolio projects because it shows the complete FPGA flow from behavioral design and verification through constraints, implementation, timing closure, bitstream generation, and board programming. A public hardware demonstration video would be the best remaining addition.
 
 ## 5. Al Tallow Website
 
