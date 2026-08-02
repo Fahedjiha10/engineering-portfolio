@@ -18,7 +18,7 @@ I'm a Computer Engineering student at Florida International University, graduati
 | [Embedded State Machines](projects/embedded-state-machines/) | RIMS finite-state machines, timers, concurrent outputs | Coursework |
 | [Python Hangman](projects/python-hangman/) | File input, validation, modular game logic | Runnable |
 | [Al Tallow Website](projects/al-tallow-website/) | Responsive HTML/CSS/JavaScript | Prototype |
-| [FPGA Parking Counter](projects/fpga-smart-parking/) | Counter/FSM/debouncing/display specification | Design-stage |
+| [FPGA Smart Parking Controller](projects/fpga-smart-parking/) | VHDL FSM, debouncing, self-checking simulation, bitstream, Zybo programming | Verified |
 
 ## Complete engineering archive
 

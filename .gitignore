@@ -8,3 +8,12 @@ build/
 dist/
 *.exe
 *.log
+*.jou
+~$*.docx
+tmp/
+
+# Vivado-generated working data; curated source and results stay tracked.
+projects/fpga-smart-parking/.Xil/
+projects/fpga-smart-parking/vivado_project_vhdl/
+projects/fpga-smart-parking/vivado_results_vhdl/
+projects/fpga-smart-parking/results/screenshots/

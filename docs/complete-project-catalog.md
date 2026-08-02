@@ -116,7 +116,7 @@ This file is not an EEL4730 state-machine project even though the original filen
 
 ### FPGA Smart Parking Garage Counter
 
-A proposed FPGA system that tracks cars entering and leaving a garage. Push buttons simulate entry/exit sensors; the available-space count decreases or increases while remaining between zero and the configured capacity. A green LED indicates availability, a red LED indicates a full garage, and LEDs or a seven-segment display show the remaining count. The intended design uses a finite-state machine, counters, input debouncing, and real-time outputs. Only the proposal was found—no completed HDL or bitstream.
+A completed VHDL-2008 system that tracks available garage spaces on a Zybo Z7-20. Four switches set capacity; reset loads that capacity; debounced entry and exit buttons generate one-clock events for a three-state finite-state machine. The four-bit count remains between zero and the loaded maximum, drives LD0-LD3 in binary, and changes RGB LD5 from green to red when the garage is full. The project includes synthesizable modules, a self-checking testbench, Zybo constraints, repeatable Tcl flows, selected Vivado evidence, and the generated bitstream. Behavioral simulation passed, all timing constraints were met with +3.967 ns WNS and 0.000 ns TNS, and Vivado Hardware Manager detected and programmed the `xc7z020` device.
 
 ### Digital Safe and Coin-Operated Vending Machine Processors (original: Assignment 5)
 
